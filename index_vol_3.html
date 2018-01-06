@@ -2,14 +2,17 @@
 <html>
 <head>
 	<title>Tasky</title>
-	<link rel="stylesheet" type="text/css" href="public/stylesheets/index.css">
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/index_vol_3.css">
 </head>
 <body>
 	<div class="container">
 		<div id="err-box">
-			<p id="error-text"><span><u>Error!</u></span> Looks like you forgot something, check your username and password once again</p>
+			<p id="error-text"><span><u>Error!</u></span> You are missing something, Job Title must have more than 5 characters</p>
 			<img src="public/stylesheets/assets/error.svg" id="closeError">
 		</div><!-- end err-box -->
+		<div id="success-box" class="box">
+
+		</div><!-- end success-box -->
 		<div class="left">
 			<div class="left-header">
 				<h1>
@@ -50,30 +53,34 @@
 		<div class="right">
 			<div class="header">
 				<div class="titles">
-					<p>Account Details</p>
-					<p>These informations will be used for your authentication later so don’t forget them	</p>
+					<p id="Page-title">Account Details</p>
+					<p>You are almost ready to use app, here you can see preview of your profile so far</p>
 				</div><!-- end titles -->
 				<div class="steps-div">
-						<p>STEP<br> <span>01</span></p>
+						<p>STEP<br> <span>03</span></p>
 				</div><!-- end steps-div -->
 			</div><!-- end header -->
 			<div class="form-holder">
 				<div class="form-title">
-					<p>Please fIll out these fIelds</p>
+					<p>Please add your Job Title</p>
 				</div><!-- end form-title -->
 				<div class="form-container">
 					<div class="form-content">
+						<div class="preview">
+							<div class="image-holder" id="image-holder">
+							</div><!-- end img-holder -->
+							<div class="info">
+								<p id="info-name">Jovan Belic</p>
+								<p>your job title here</p>
+							</div><!-- end info -->
+						</div><!-- end preview -->
 						<div class="username-field">
-							<p>FULL NAME</p>
-							<input type="text" class="username" id="username" placeholder="Enter your name..." />
-						</div><!-- username-field -->
-						<div class="username-field">
-							<p>PASSWORD</p>
-							<input type="password" class="username" id="password" placeholder="Enter password..." />
+							<p>JOB TITLE</p>
+							<input type="text" class="username" id="jobtitle" placeholder="Ui Designer / Programmer.." />
 						</div><!-- username-field -->
 						<div class="next-button" id="next-button">
 							<div class="button-text">
-								<p>NEXT STEP</p>
+								<p>START APP</p>
 							</div><!-- end button-text -->
 							<div class="button-img">
 								<img src="public/stylesheets/assets/right-arrow.svg">
@@ -85,7 +92,6 @@
 		</div><!-- end right -->
 	</div><!-- end container -->
 	<!-- scripts -->
-	<script src="views/app.js"></script>
-	<script src="views/controllers/app-controller.js"></script>
+	<script src="views/controllers/start-controller.js"></script>
 </body>
 </html>

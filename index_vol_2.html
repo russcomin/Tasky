@@ -2,14 +2,18 @@
 <html>
 <head>
 	<title>Tasky</title>
-	<link rel="stylesheet" type="text/css" href="public/stylesheets/index.css">
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/index_vol_2.css">
 </head>
 <body>
 	<div class="container">
 		<div id="err-box">
-			<p id="error-text"><span><u>Error!</u></span> Looks like you forgot something, check your username and password once again</p>
+			<p id="error-text"><span><u>Error!</u></span> Please upload profile picture and enter description with more than 20 characters</p>
 			<img src="public/stylesheets/assets/error.svg" id="closeError">
 		</div><!-- end err-box -->
+		<div id="success-box">
+			<p id="error-text"><span><u>Success!</u></span> Your profile picture is uploaded, upload again if you want new one</p>
+			<img src="public/stylesheets/assets/error.svg" id="closeSuccess">			
+		</div>	
 		<div class="left">
 			<div class="left-header">
 				<h1>
@@ -50,11 +54,11 @@
 		<div class="right">
 			<div class="header">
 				<div class="titles">
-					<p>Account Details</p>
-					<p>These informations will be used for your authentication later so don’t forget them	</p>
+					<p>Photo and Description</p>
+					<p>Lets make your profile pretty, this time we need your profile picture and your description</p>
 				</div><!-- end titles -->
 				<div class="steps-div">
-						<p>STEP<br> <span>01</span></p>
+						<p>STEP<br> <span>02</span></p>
 				</div><!-- end steps-div -->
 			</div><!-- end header -->
 			<div class="form-holder">
@@ -64,12 +68,8 @@
 				<div class="form-container">
 					<div class="form-content">
 						<div class="username-field">
-							<p>FULL NAME</p>
-							<input type="text" class="username" id="username" placeholder="Enter your name..." />
-						</div><!-- username-field -->
-						<div class="username-field">
-							<p>PASSWORD</p>
-							<input type="password" class="username" id="password" placeholder="Enter password..." />
+							<p>DESCRIPTION</p>
+							<textarea type="text" class="username" id="description" placeholder="Tell us something about you..."></textarea>
 						</div><!-- username-field -->
 						<div class="next-button" id="next-button">
 							<div class="button-text">
@@ -82,10 +82,19 @@
 					</div><!-- end form-content -->
 				</div><!-- end form-container -->
 			</div><!-- end form-holder -->
+			<div class="image-holder">
+				<div class="section1" id="section1">
+					<img src="public/stylesheets/assets/picture.svg">
+					<input type="file" id="imger">
+				</div><!-- end section1 -->
+				<div class="section2">
+					<p>UPLOAD</p>
+				</div><!-- end section2 -->
+			</div><!-- end image holder -->
 		</div><!-- end right -->
 	</div><!-- end container -->
 	<!-- scripts -->
-	<script src="views/app.js"></script>
 	<script src="views/controllers/app-controller.js"></script>
+	<script src="views/controllers/image-upload.js"></script>
 </body>
 </html>

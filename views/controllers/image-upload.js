@@ -10,6 +10,7 @@ input.onchange = function(evt){
         }
         fr.readAsDataURL(files[0]);
         authErrClose();
+        success();
     }
 }
 
@@ -22,13 +23,25 @@ function authErrClose() {
     },500)
 }
 
+function succClose() {
+    setTimeout(function(){
+        succ.style.top = '-60px';
+        succ.style.transition = '.4s';    
+    },500)
+}
+
+function success() {
+    succ.style.top = '0px';
+    succ.style.transition = '.4s';
+}
+
 function authErr() {
     err.style.top = '0px';
     err.style.transition = '.4s';
-
 }
 
 let err = document.getElementById('err-box');
+let succ = document.getElementById('success-box');
 let nextStep = document.getElementById('next-button').addEventListener('click', next_step);
 
 function next_step() {
@@ -39,13 +52,12 @@ function next_step() {
     }else {
         if(description.length > 20){
             this.setDesc = localStorage.setItem("description", description);
-            alert('you passed');
+            document.location = "index_vol_3.html";
     }
 }
 }
 closeButton = document.getElementById('closeError');
 closeButton.addEventListener('click', authErrClose);
-
-let pic = 'url(' + localStorage['profile_image'] + ')';
-
+closeSuccess = document.getElementById('closeSuccess');
+closeSuccess.addEventListener('click', succClose);
 // 'url(' + localStorage['foo'] + ')';
