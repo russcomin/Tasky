@@ -1,1 +1,92 @@
-ECHO is on.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tasky</title>
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/app.css">
+</head>
+<body>
+	<div class="container">
+		<div id="err-box">
+			<p id="error-text"><span><u>Error!</u></span> Looks like you forgot something, check your username and password once again</p>
+			<img src="public/stylesheets/assets/error.svg" id="closeError">
+		</div><!-- end err-box -->
+		<div class="left">
+			<div class="left-header">
+				<h1>
+					Let’s set up your<br>
+					account
+				</h1>
+			</div><!-- end left-header -->
+			<div class="steps">
+				<h3><b>STEPS</b></h3>
+			</div><!-- end steps -->
+			<ul class="side-navigation">
+				<li>
+					<div class="number">
+						<p>1</p>
+					</div>
+					<div class="name">
+						<h3>ACCOUNT DETAILS</h3>
+					</div>
+				</li>
+				<li>
+					<div class="number">
+						<p>2</p>
+					</div>
+					<div class="name">
+						<h3>PHOTO AND<br>DESCRIPTION</h3>
+					</div>
+				</li>
+				<li>
+					<div class="number">
+						<p>3</p>
+					</div>
+					<div class="name">
+						<h3>READY</h3>
+					</div>
+				</li>								
+			</ul><!-- end side-navigation -->
+		</div><!-- end left -->
+		<div class="right">
+			<div class="header">
+				<div class="titles">
+					<p>Account Details</p>
+					<p>These informations will be used for your authentication later so don’t forget them	</p>
+				</div><!-- end titles -->
+				<div class="steps-div">
+						<p>STEP<br> <span>01</span></p>
+				</div><!-- end steps-div -->
+			</div><!-- end header -->
+			<div class="form-holder">
+				<div class="form-title">
+					<p>Please fIll out these fIelds</p>
+				</div><!-- end form-title -->
+				<div class="form-container">
+					<div class="form-content">
+						<div class="username-field">
+							<p>FULL NAME</p>
+							<input type="text" class="username" id="username" placeholder="Enter your name..." />
+						</div><!-- username-field -->
+						<div class="username-field">
+							<p>PASSWORD</p>
+							<input type="password" class="username" id="password" placeholder="Enter password..." />
+						</div><!-- username-field -->
+						<div class="next-button" id="next-button">
+							<div class="button-text">
+								<p>NEXT STEP</p>
+							</div><!-- end button-text -->
+							<div class="button-img">
+								<img src="public/stylesheets/assets/right-arrow.svg">
+							</div><!-- end button-img -->
+						</div><!-- end next-button -->						
+					</div><!-- end form-content -->
+				</div><!-- end form-container -->
+			</div><!-- end form-holder -->
+		</div><!-- end right -->
+	</div><!-- end container -->
+	<!-- scripts -->
+	<script src="views/app.js"></script>
+	<script src="views/router.js"></script>
+	<script src="views/controllers/app-controller.js"></script>
+</body>
+</html>
