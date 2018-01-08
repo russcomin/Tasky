@@ -131,6 +131,7 @@ input:focus { outline: none; }
 }
 
 .side-navigation li {
+	transition: .4s;
 	width: 264px;
 	height: 60px;
 	cursor: pointer;
@@ -151,6 +152,7 @@ input:focus { outline: none; }
 }
 
 .number img {
+	transition: .4s;
 	width: 25px;
 	height: 25px;
 	margin-top: 18px;
@@ -183,6 +185,7 @@ input:focus { outline: none; }
 }
 
 .non-active h3 {
+	transition: .4s;
 	font-family: Roboto-Light;
 	font-size: 9px;
 	letter-spacing: 1.1px;
@@ -196,13 +199,13 @@ input:focus { outline: none; }
 .li-hover:hover .number img {
 	transition: .4s;
 	margin-right: 0px;
-	margin-right: 15px;
+	margin-right: 10px;
 	opacity: .8;
 }
 
 .li-hover:hover .name h3 {
 	transition: .4s;
-	margin-left: 5px;
+	margin-left: 10px;
 	color: #595757;
 }
 
