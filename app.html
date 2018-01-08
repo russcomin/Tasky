@@ -25,66 +25,65 @@
 				<h3><b>MENU</b></h3>
 			</div><!-- end steps -->
 			<ul class="side-navigation">
-				<li>
+				<li class="active-li">
 					<div class="number">
-						<p>1</p>
+						<img src="public/stylesheets/assets/network.svg">
 					</div>
-					<div class="name">
-						<h3>ACCOUNT DETAILS</h3>
+					<div class="name active">
+						<h3>DASHBOARD</h3>
 					</div>
 				</li>
-				<li>
-					<div class="number">
-						<p>2</p>
+				<li class="li-hover">
+					<div class="number non-active">
+						<img src="public/stylesheets/assets/tabs.svg">
 					</div>
-					<div class="name">
-						<h3>PHOTO AND<br>DESCRIPTION</h3>
+					<div class="name non-active">
+						<h3>TASK MANAGER</h3>
 					</div>
 				</li>
-				<li>
-					<div class="number">
-						<p>3</p>
+				<li class="li-hover">
+					<div class="number non-active">
+						<img src="public/stylesheets/assets/user.svg">
 					</div>
-					<div class="name">
-						<h3>READY</h3>
+					<div class="name non-active">
+						<h3>ACCOUNT</h3>
 					</div>
-				</li>								
+				</li>
+				<li class="li-hover">
+					<div class="number non-active">
+						<img src="public/stylesheets/assets/settings.svg">
+					</div>
+					<div class="name non-active">
+						<h3>SETTINGS</h3>
+					</div>
+				</li>												
 			</ul><!-- end side-navigation -->
 		</div><!-- end left -->
 		<div class="right">
 			<div class="header">
 				<div class="titles">
-					<p>Account Details</p>
-					<p>These informations will be used for your authentication later so don’t forget them	</p>
+					<p>TASKS</p>
+					<p>0</p>
 				</div><!-- end titles -->
 				<div class="steps-div">
-						<p>STEP<br> <span>01</span></p>
+					<div class="next-button" id="next-button">
+						<div class="button-text">
+							<p>ADD TASK</p>
+						</div><!-- end button-text -->
+						<div class="button-img">
+							<img src="public/stylesheets/assets/add-plus-button.svg">
+						</div><!-- end button-img -->
+					</div><!-- end next-button -->			
 				</div><!-- end steps-div -->
 			</div><!-- end header -->
 			<div class="form-holder">
 				<div class="form-title">
-					<p>Please fIll out these fIelds</p>
+					<p>Task Board</p>
 				</div><!-- end form-title -->
-				<div class="form-container">
-					<div class="form-content">
-						<div class="username-field">
-							<p>FULL NAME</p>
-							<input type="text" class="username" id="username" placeholder="Enter your name..." />
-						</div><!-- username-field -->
-						<div class="username-field">
-							<p>PASSWORD</p>
-							<input type="password" class="username" id="password" placeholder="Enter password..." />
-						</div><!-- username-field -->
-						<div class="next-button" id="next-button">
-							<div class="button-text">
-								<p>NEXT STEP</p>
-							</div><!-- end button-text -->
-							<div class="button-img">
-								<img src="public/stylesheets/assets/right-arrow.svg">
-							</div><!-- end button-img -->
-						</div><!-- end next-button -->						
-					</div><!-- end form-content -->
-				</div><!-- end form-container -->
+				<div class="form-content">
+					<p>You currently work on nothing, start doing something 
+					and create   <span><a href="#"> new task.</a></span></p>
+				</div><!-- end form content -->
 			</div><!-- end form-holder -->
 		</div><!-- end right -->
 	</div><!-- end container -->
