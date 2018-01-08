@@ -17,3 +17,8 @@ let job_title,
 
 	job_title = localStorage['jobTitle'];
 	j_title = document.getElementById('j-title').innerHTML = job_title;	
+
+
+	this.settings = document.getElementById('settings');
+	this.settings.addEventListener('click', openSettings);
+		function openSettings(){ document.location = "settings.html" }
