@@ -22,3 +22,4 @@ let job_title,
 	this.settings = document.getElementById('settings');
 	this.settings.addEventListener('click', openSettings);
 		function openSettings(){ document.location = "settings.html" }
+

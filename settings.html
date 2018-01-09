@@ -1,1 +1,91 @@
-ECHO is on.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tasky</title>
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/settings.css">
+</head>
+<body>
+	<div class="container">
+		<div id="err-box">
+			<p id="error-text"><span><u>Error!</u></span> Looks like you forgot something, check your username and password once again</p>
+			<img src="public/stylesheets/assets/error.svg" id="closeError">
+		</div><!-- end err-box -->
+		<div class="left">
+			<div class="left-header">
+				<div class="image">
+					<div id="user-image">
+					</div><!-- end user-image -->
+				</div><!-- end image -->
+				<div class="user-info">
+					<p id="u-name">Name</p>
+					<p id="j-title">Job Title</p>
+				</div><!-- end user-info -->
+			</div><!-- end left-header -->
+			<div class="steps">
+				<h3><b>MENU</b></h3>
+			</div><!-- end steps -->
+			<ul class="side-navigation">
+				<li class="li-hover" id="dashboard">
+					<div class="number non-active">
+						<img src="public/stylesheets/assets/network.svg">
+					</div>
+					<div class="name non-active">
+						<h3>DASHBOARD</h3>
+					</div>
+				</li>
+				<li class="li-hover">
+					<div class="number non-active">
+						<img src="public/stylesheets/assets/tabs.svg">
+					</div>
+					<div class="name non-active">
+						<h3>TASK MANAGER</h3>
+					</div>
+				</li>
+				<li class="li-hover">
+					<div class="number non-active">
+						<img src="public/stylesheets/assets/user.svg">
+					</div>
+					<div class="name non-active">
+						<h3>ACCOUNT</h3>
+					</div>
+				</li>
+				<li class="active-li">
+					<div class="number">
+						<img src="public/stylesheets/assets/settings.svg">
+					</div>
+					<div class="name active">
+						<h3>SETTINGS</h3>
+					</div>
+				</li>												
+			</ul><!-- end side-navigation -->
+		</div><!-- end left -->
+		<div class="right">
+			<div class="header">
+				<div class="titles">
+					<p>SETTINGS</p>
+				</div><!-- end titles -->
+				<div class="steps-div">
+					<div class="next-button delete-button" id="next-button">
+						<div class="button-text">
+							<p>DELETE</p>
+						</div><!-- end button-text -->
+						<div class="button-img">
+							<img src="public/stylesheets/assets/delete.svg">
+						</div><!-- end button-img -->
+					</div><!-- end next-button -->			
+				</div><!-- end steps-div -->
+			</div><!-- end header -->
+			<div class="form-holder">
+				<div class="form-title">
+					<p>Settings</p>
+				</div><!-- end form-title -->
+				<div class="form-content">
+				</div><!-- end form content -->
+			</div><!-- end form-holder -->
+		</div><!-- end right -->
+	</div><!-- end container -->
+	<!-- scripts -->
+	<script src="views/controllers/settings-controller.js"></script>
+	<script src="views/controllers/app-controller.js"></script>
+</body>
+</html>
