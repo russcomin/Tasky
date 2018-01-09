@@ -200,7 +200,7 @@ input:focus { outline: none; }
 	transition: .4s;
 	margin-right: 0px;
 	margin-right: 10px;
-	opacity: .8;
+	opacity: 1;
 }
 
 .li-hover:hover .name h3 {
@@ -233,7 +233,6 @@ input:focus { outline: none; }
 	color: #7b7a7a;
 	font-size: 37px;
 	font-family: Roboto-Light;
-	opacity: .8;
 }
 
 .form-holder {
@@ -270,22 +269,41 @@ input:focus { outline: none; }
 	width: 877px
 	height: 420px;
 	margin: 0 auto;
-	text-align: left;
 }
 
-.form-content p {
-	margin-left: 24px;
-	margin-top: 30px;
-	color: #b1b1b1;
-	font-family: Roboto-Light;
-	font-size: 12px;
-	letter-spacing: 1.3px;
+.form-content ul {
+	width: 877px;
+	height: 68px;
 }
 
-.form-content span {
-	font-family: Roboto-Bold;
-	color: #3c9cdc;
-    opacity: .9;
+.form-content ul>li { display: inline-block; text-align: center; line-height: 68px; }
+
+.active-field {
+	width: 438.5px;
+	height: 66px;
+	border-bottom: 2px solid #3498db;
+}
+
+.non-active-field {
+	transition: .2s;
+	width: 438.5px;
+	height: 66px;
+}
+
+.form-content ul>li:first-child { float: left; color: #3498db; font-family: Roboto-Bold; }
+.form-content ul>li:last-child { float: right; color: #bfbfbf; font-family: Roboto-Regular; }
+
+.form-content ul>li:last-child:hover {
+	transition: .2s;
+	cursor: pointer;
+	border-bottom: 2px solid #6fb3e0;
+	color: #6fb3e0;
+	opacity: 1;
+}
+
+.form-content ul>li>p {
+	font-size: 11px;
+	letter-spacing: 1.2px;
 }
 
 a {
@@ -351,7 +369,7 @@ a {
 	float: left;
 	width: 114px;
 	height: 47px;
-	background: #e74c3c;
+	background: #3498db;
 }
 
 .button-text p {
@@ -370,7 +388,7 @@ a {
 	float: right;
 	width: 48px;
 	height: 47px;
-	background: #c0392b;
+	background: #2483c3;
 	text-align: center;
 }
 
@@ -383,6 +401,147 @@ a {
 
 .next-button:hover {
 	transition: .2s;
-	border-bottom: 3px solid #c0392b;
+	border-bottom: 3px solid #2483c3;
 	opacity: .8;
+}
+
+.settings-content {
+	width: 777px;
+	height: 190px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.username-field {
+	margin-top: 40px;
+	width: 350px;
+}
+
+.username-field:first-child {
+	float: left;
+}
+
+.username-field:last-child {
+	margin-left: 50px;
+	float: left;
+}
+
+.username-field p {
+	font-size: 10px;
+	font-family: Roboto-Bold;
+	color: #747070;
+	letter-spacing: 1.2px;
+	text-align: left;
+}
+
+.username-field .username {
+	width: 350px;
+	height: 53px;
+	border-radius: 5px;
+	background: none;
+	border: none;
+	background: #f2f2f2;
+	border-bottom: 3px solid #e0e0e0;
+	margin-top: 15px;
+ 	text-indent: 15px;
+ 	font-family: Roboto-Regular;
+ 	color: #626262;
+ 	letter-spacing: 1px;
+}
+
+.username-field .username::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: Roboto-Regular;
+  font-size: 10px;
+  color: #918e8e;
+  letter-spacing: 1.5px;
+  opacity: 1;
+}
+
+#save_changes {
+	transition: 1s;
+	width: 750px;
+	height: 60px;
+	background: #3498db;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	font-family: Roboto-Regular;
+	font-size: 11px;
+	letter-spacing: 1.7px;
+	margin-left: 50px;
+}
+
+#save_changes:hover {
+	transition: .2s;
+	cursor: pointer;
+	border-bottom: 4px solid #2483c3;
+	opacity: .7; 
+}
+
+#modal-window {
+	width: 1280px;
+	height: 720px;
+	background: rgba(0,0,0, .5);
+	position: absolute;
+	top: -720px;
+	left: 0px;
+}
+
+#modal-box {
+	width: 400px;
+	height: 240px;
+	background: white;
+	position: fixed;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0);
+	text-align: center;
+	top: -400px;
+}
+
+#modal-box img {
+	widows: 24px;
+	height: 24px;
+	text-align: center;
+	cursor: pointer;
+	opacity: .5;
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#modal-box p {
+	float: left;
+	font-family: Roboto-Regular;
+	font-size: 12px;
+	color: #4e4f50;
+	letter-spacing: 1.2px;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+.verify {
+	width: 350px;
+	height: 53px;
+	border-radius: 5px;
+	background: none;
+	border: none;
+	background: #f2f2f2;
+	border-bottom: 3px solid #e0e0e0;
+	margin-top: 25px;
+ 	text-indent: 15px;
+ 	font-family: Roboto-Regular;
+ 	color: #626262;
+ 	letter-spacing: 1px;
+ 	margin-right: 10px;
+}
+
+#verify_button {
+	cursor: pointer;
+	font-family: Roboto-Bold;
+}
+
+#verify_button:hover {
+	background: #3498db;
+	border-bottom: 2px solid #2483c3;
+	color: white;
 }

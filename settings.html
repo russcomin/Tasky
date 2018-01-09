@@ -5,6 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="public/stylesheets/settings.css">
 </head>
 <body>
+	<div id="modal-window">
+		<div id="modal-box">
+			<img src="public/stylesheets/assets/error.svg" id="closeModal">
+			<p>Are you sure you want to delete your account?</p>
+			<input type="password" class="username verify" id="verify" placeholder="Enter your password..." />
+			<input type="button" id="verify_button" class="verify" value="DELETE">
+		</div><!-- end modal-box -->
+	</div>	
 	<div class="container">
 		<div id="err-box">
 			<p id="error-text"><span><u>Error!</u></span> Looks like you forgot something, check your username and password once again</p>
@@ -80,6 +88,25 @@
 					<p>Settings</p>
 				</div><!-- end form-title -->
 				<div class="form-content">
+					<ul>
+						<li class="active-field">
+							<p>USER SETTINGS</p>
+						</li>
+						<li class="non-active-field">
+							<p>OTHER SETTINGS</p>
+						</li>						
+					</ul>
+					<div class="settings-content">
+						<div class="username-field">
+							<p>FULL NAME</p>
+							<input type="text" class="username" id="username" placeholder="Enter your name..." />
+						</div><!-- username-field -->
+						<div class="username-field">
+							<p>PASSWORD</p>
+							<input type="password" class="username" id="password" placeholder="Enter your password..." />
+						</div><!-- username-field -->
+					</div><!-- end settings-content -->
+						<input type="button" name="button" id="save_changes" value="SAVE CHANGES"></div>												
 				</div><!-- end form content -->
 			</div><!-- end form-holder -->
 		</div><!-- end right -->

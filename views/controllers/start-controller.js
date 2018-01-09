@@ -35,6 +35,9 @@ function authErr() {
 
 let err = document.getElementById('err-box');
 
+closeButton = document.getElementById('closeError');
+closeButton.addEventListener('click', authErrClose);
+
 function startAPP() {
     let jobtitle;
         jobtitle = document.getElementById('jobtitle').value;    
@@ -46,6 +49,3 @@ function startAPP() {
         authErrClose();
     }
 }
-
-closeButton = document.getElementById('closeError');
-closeButton.addEventListener('click', authErrClose);
