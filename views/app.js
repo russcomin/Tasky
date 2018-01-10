@@ -1,6 +1,9 @@
 // configuration
 
-this.reset = localStorage.clear();
+let loggedU = localStorage.getItem('logged');
+    if (loggedU == true) {
+        document.location = "app.html";
+    }
 
 let ERRORS,
     username_error,

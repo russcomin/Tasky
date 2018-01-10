@@ -1,0 +1,1 @@
+this.setLoggedUser = localStorage.setItem('logged', true);

@@ -59,7 +59,7 @@ let del_button = document.getElementsByClassName('delete-button')[0];
 let changer = document.getElementById('save_changes');
 	changer.addEventListener('click', save_changes);
 
-	function save_changes() {
+	function save_userve_changes() {
 		let newUsername = document.getElementById('username').value,
 			newPassword = document.getElementById('password').value;
 		
@@ -96,3 +96,8 @@ closeButton.addEventListener('click', authErrClose);
 
 	//	background: #3498db; #2483c3
  
+let verify_password,
+	real_password;
+	
+	real_password = localStorage['password'];
+	verify_password = document.getElementById('verify').value;
